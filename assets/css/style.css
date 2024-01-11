@@ -46,14 +46,6 @@ button:hover {
     background-color: #2980b9;
 }
 
-.player,
-.computer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
-
 .scores {
     font-size: 18px;
 }
@@ -73,14 +65,32 @@ button:hover {
     margin-top: 20px;
 }
 
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 48%; 
+}
+.computer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items:center;
+    margin-top: 20px;
+    width: 58%;
+}
+
 @media only screen and (min-width: 600px) {
     .game-area {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .player,
+    .player{
+        align-items: center;
+    }
+
     .computer {
-        width: 48%;
+        width: 10%;
     }
 }
