@@ -1,3 +1,4 @@
+/* Apply base styles to the entire page */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f8f8;
@@ -10,11 +11,13 @@ body {
     flex-direction: column; /* Center children vertically */
 }
 
+/* Style the header with centered text */
 header {
     text-align: center;
     margin-top: 20px;
 }
 
+/* Define styles for the main game area */
 .game-area {
     width: 75%;
     margin-top: 4%;
@@ -24,12 +27,14 @@ header {
     align-items: center;
 }
 
+/* Style the container for game buttons */
 .buttons-container {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
+/* Style the Rock, Paper, Scissors game buttons */
 button {
     background-color: #3498db;
     color: #fff;
@@ -42,14 +47,17 @@ button {
     transition: background-color 0.3s;
 }
 
+/* Add a hover effect to the game buttons */
 button:hover {
     background-color: #2980b9;
 }
 
+/* Define styles for game scores */
 .scores {
     font-size: 18px;
 }
 
+/* Style the player and computer images */
 #player-image,
 #computer-image {
     width: 200px;
@@ -57,6 +65,7 @@ button:hover {
     margin-top: 10px;
 }
 
+/* Style the container for scores with spacing between elements */
 .score-container {
     display: flex;
     justify-content: space-between;
@@ -65,32 +74,26 @@ button:hover {
     margin-top: 20px;
 }
 
-.player {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    width: 48%; 
-}
+/* Define styles for player and computer sections */
+.player,
 .computer {
     display: flex;
-    flex-direction: column-reverse;
-    align-items:center;
+    flex-direction: column-reverse; /* Align content in reverse order for smaller screens */
+    align-items: center;
     margin-top: 20px;
-    width: 58%;
+    width: 58%; /* Set initial width for smaller screens */
 }
 
+/* Apply responsive styles for larger screens using a media query */
 @media only screen and (min-width: 600px) {
     .game-area {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .player{
-        align-items: center;
-    }
-
+    /* Adjust width for player and computer sections on larger screens */
+    .player,
     .computer {
-        width: 10%;
+        width: 55%;
     }
 }
