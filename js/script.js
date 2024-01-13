@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 // Get elements from the DOM
 const buttons = document.querySelectorAll('.game-area button');
 const playerScoreElement = document.getElementById('player-score');
