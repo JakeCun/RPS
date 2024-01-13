@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Balinese&family=Salsa&display=swap');
+
 /* Apply base styles to the entire page */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Noto Serif Balinese', 'Salsa', sans-serif;
     background-color: #f8f8f8;
     margin-top: 55px;
     padding: 0;
@@ -62,8 +64,6 @@ button:hover {
 .scores {
     font-size: 10px; 
     padding: 1px;
-    
-
 }
 
 /* Style the player and computer images */
@@ -73,7 +73,6 @@ button:hover {
     height: 150px;
     max-width: 100%; /* Ensure images don't stretch too much */
     max-height: 100%;
-   
 }
 
 /* Style the container for scores with spacing between elements */
@@ -83,7 +82,6 @@ button:hover {
     align-items: center;
     width: 100%;
     margin-top: 20px;
-   
 }
 
 /* Define styles for player and computer sections */
@@ -96,7 +94,9 @@ button:hover {
     width: 75%; /* Set initial width for smaller screens */
 }
 
-
+#results-display {
+    font-family: 'Noto Serif Balinese', 'Salsa', sans-serif;
+}
 
 /* Apply responsive styles for larger screens using a media query*/
 @media only screen and (min-width: 600px) {
@@ -124,6 +124,15 @@ button:hover {
     }
 
     .scores {
+        font-size: 20px;
+    }
+
+    header {
+        font-size: 30px;
+    }
+
+    p {
         font-size: 25px;
     }
+
 }
