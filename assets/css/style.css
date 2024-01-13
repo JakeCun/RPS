@@ -2,29 +2,33 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f8f8;
-    margin-bottom: 446;
+    margin-top: 55px;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     flex-direction: column; /* Center children vertically */
 }
 
 /* Style the header with centered text */
 header {
+    position: absolute;
+    top: 1px;
     text-align: center;
-    margin-top: 10px; /* Adjusted margin for better spacing */
+    margin-top: 10px; 
+    font-size: 15px;/* Adjusted margin for better spacing */
 }
 
 /* Define styles for the main game area */
 .game-area {
+    top: 10px;
     width: 75%;
     margin-top: 5%; /* Adjusted margin for better spacing */
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-height: 100vh;
 }
 
 /* Style the container for game buttons */
@@ -33,6 +37,7 @@ header {
     flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
     justify-content: center;
     margin-top: 20px;
+    align-content: center;
 }
 
 /* Style the Rock, Paper, Scissors game buttons */
@@ -55,16 +60,20 @@ button:hover {
 
 /* Define styles for game scores */
 .scores {
-    font-size: 2vw; 
-    margin-bottom: 20px;
+    font-size: 10px; 
+    padding: 1px;
+    
+
 }
 
 /* Style the player and computer images */
 #player-image,
 #computer-image {
+    width: 150px;
+    height: 150px;
     max-width: 100%; /* Ensure images don't stretch too much */
     max-height: 100%;
-    margin-top: 10px;
+   
 }
 
 /* Style the container for scores with spacing between elements */
@@ -74,6 +83,7 @@ button:hover {
     align-items: center;
     width: 100%;
     margin-top: 20px;
+   
 }
 
 /* Define styles for player and computer sections */
@@ -83,30 +93,37 @@ button:hover {
     flex-direction: column-reverse; /* Align content in reverse order for smaller screens */
     align-items: center;
     margin-top: 10px; /* Adjusted margin for better spacing */
-    width: 58%; /* Set initial width for smaller screens */
+    width: 75%; /* Set initial width for smaller screens */
 }
 
-/* Style the footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+
 
 /* Apply responsive styles for larger screens using a media query*/
 @media only screen and (min-width: 600px) {
     .game-area {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
     }
-
     /* Adjust width for player and computer sections on larger screens*/
     .player,
     .computer {
-        width: 55%;
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .game-area {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #player-image,
+    #computer-image {
+        width: 125px;
+        height: 125px;
+    }
+
+    .scores {
+        font-size: 25px;
     }
 }
