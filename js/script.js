@@ -37,7 +37,7 @@ buttons.forEach(button => {
         updateScores(winner);
 
         // Display result on the screen
-        displayResult(`You chose ${choices[playerChoice]}\nComputer chose ${choices[computerChoice]}\n\n${winner === 'draw' ? 'It\'s a draw!' : winner === 'player' ? 'You win!' : 'Computer wins!'}`);
+        displayResult(`You chose ${choices[playerChoice]}\n,Computer chose ${choices[computerChoice]}\n\n${winner === 'draw' ? 'It\'s a draw!' : winner === 'player' ? 'You win!' : 'Computer wins!'}`);
     });
 });
 

@@ -1,10 +1,8 @@
-# Love Maths
+# Rock, Paper, Scissors
 
-In this section, you will include one or two paragraphs providing an overview of your project. Essentially, this part is your sales pitch. At this stage, you should have a name for your project so use it! Don’t introduce the project as a Portfolio project for the diploma. In this section, describe what the project hopes to accomplish, who it is intended to target and how it will be useful to the target audience. 
+Rock, Paper, Scissors is a designed to show that Javascript can be used to make a fun interactive game of chance. This site is aimed at those who want to play against the computer in a heads up game of chance.
 
-For example, Love Maths is a site that hopes to demonstrate how pure JavaScript works in a real-world context. The site will be targeted toward people who not only love to implement more advanced JavaScript concepts but also maths. Love Maths is a fully responsive JavaScript maths game that will allow users to add, subtract, multiply and divide numbers. 
-
-![Responsice Mockup](assets/readme-images/amiresponsive.png)
+![Responsive Mockup](assets/readme-images/amiresponsive.png)
 
 ## Features
 - __The Rock, Paper, Scissors Heading__
@@ -32,13 +30,9 @@ For example, Love Maths is a site that hopes to demonstrate how pure JavaScript 
 
 ## Testing 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+- When testing this project I made sure to check on other devices, after deployment I used my iPhone 13 and it worked as expected. Other tests I did included the lighthouse test, on my first test you can see that I got a very low score on performance,![Lighthouse](assets/readme-images/lighthouse-first.png)this was because my images were sized incorrectly, I used Lint images to check the responsiveness of the images and as you can see here it outlines the issue,![Lint](assets/readme-images/rps-lint-results-one.png)I then resized the images and as you can see it improved the score significantly. ![Performance](assets/readme-images/lighthouse-updated.png)
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+- While testing I noticed that my style.css would not change for the computer-score div, after some time I noticed that I had placed the closing /div tag in the wrong line of code as you can see here,![Incorrect-div](assets/readme-images/Incorrect-div-closing-tag-%20placement.png) once I placed it at the correct place then my styling worked as intended.
 
 
 ### Validator Testing 
